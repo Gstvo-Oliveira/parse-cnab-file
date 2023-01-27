@@ -20,6 +20,12 @@ Esse é um projeto que permite a conversão de um arquivo cnab simples por meio 
   - [Gerando relatório](#gerando-relatório)
 
 
+## Tecnologias Utilizadas
+- Python
+- Django
+- Django Rest Framework
+- Crispy forms
+
 ## Início Rápido
 
 - ### Criação do ambiente virtual
