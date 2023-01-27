@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cnab Parser</title>
+</head>
+
+<body
+  style="background-color: #333333; color: #FFF; display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 30px 120px; font-family: 'JetBrains Mono';">
+  <h1>{{name}}</h1>
+  <div class="container"
+    style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap; margin-top: 50px; list-style: none; gap: 15px; margin-bottom: 40px;">
+
+    {% for item in cnab %}
+    <li style="border: 1px solid #FFF; border-radius: 5px; padding: 12px;">
+      <p>Type: <strong>{{item.type}}</strong></p>
+      <p>Date (YYYMMDD): <strong>{{item.date}}</strong></p>
+      <p>Value: <strong>R${{item.value}}0</strong></p>
+      <p>CPF: <strong>{{item.cpf}}</strong></p>
+      <p>Card: <strong>{{item.card}}</strong></p>
+      <p>Hour: <strong>{{item.hour}}</strong></p>
+      <p>Owner: <strong>{{item.owner}}</strong></p>
+      <p>Name: <strong>{{item.name}}</strong></p>
+    </li>
+    {% endfor %}
+
+
+  </div>
+  <aside style="font-size: 30px;">Balance: R$ <strong>{{total_balance}},00</strong></aside>
+</body>
+
+</html>
