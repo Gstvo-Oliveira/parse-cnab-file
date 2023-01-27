@@ -7,16 +7,6 @@ class ParseCnabSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ParseCnab
-        fieds = "__all__"
+        fields = "__all__"
 
-        read_only_fields = [
-            "type_of_transaction"
-            "value",
-            "CPF",
-            "card",
-            "hour",
-            "owner",
-            "store_name"
-        ]
-
-        extra_kwargs = {'file': {'write_only': True}}
+        extra_kwargs = {'id': {'read_only': True}}
