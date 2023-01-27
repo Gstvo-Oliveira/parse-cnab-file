@@ -93,11 +93,11 @@ Para fazer um upload de arquivo acesse a seguinte url:
 
 
 ```python
-http://127.0.0.1:8000/report/ 
+http://127.0.0.1:8000/api/report/ 
 
 ou
 
-http://localhost:8000/report/ 
+http://localhost:8000/api/report/ 
 ```
 
 
@@ -107,11 +107,11 @@ Você irá fazer o upload do arquivo no formulário disponível, é obrigatório
 Só será necessário colocar o nome da loja que deseja ver as informações.
 
  ```python
-http://127.0.0.1:8000/report/<nome da loja> 
+http://127.0.0.1:8000/api/report/<nome da loja> 
 
 ou
 
-http://localhost:8000/report/MERCADO DA AVENIDA 
+http://localhost:8000/api/report/MERCADO DA AVENIDA 
 ```
 
 ###
